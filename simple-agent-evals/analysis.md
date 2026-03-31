@@ -7,7 +7,36 @@ In this lab, I ran the agent multiple times and used Braintrust to analyze its b
 ### Agent Behavior
 
 From the trace details, the agent follows a structured process. It first processes the user input, then generates a response, and in some cases calls external tools.
+# Lab 2: Simple Agent Observability
 
+## Overview
+
+In this lab, I ran the agent and used Braintrust to observe its behavior. The goal was to understand how the agent processes user queries, uses tools, and performs in terms of latency and token usage.
+
+---
+
+## Braintrust Observability
+
+**Overview Metrics:**
+![metrics](simple-agent-eval-metrics.png)
+
+**Trace Example:**
+![trace](simple-agent-eval-trace.png)
+
+**Logs:**
+![logs](simple-agent-eval-logs.png)
+
+---
+
+## Analysis
+
+From the traces, the agent follows a structured process. It processes the input, generates responses, and calls tools when necessary.
+
+For example, in one trace, the agent used the `get_directions` tool correctly when handling a navigation-related query. This shows that the agent can select appropriate tools based on the task.
+
+The metrics show that the average latency is around 5 seconds, and token usage is relatively high. This suggests that multi-step reasoning and tool usage increase both latency and cost.
+
+Overall, the agent performs well, but there is room for improvement in efficiency and consistency of tool usage.
 For example, in one trace, the agent correctly used the directions tool (`get_directions`) when the user asked for navigation-related information. This shows that the agent is capable of selecting appropriate tools based on the query.
 
 ---

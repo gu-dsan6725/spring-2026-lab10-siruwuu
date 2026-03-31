@@ -1,0 +1,355 @@
+{
+  "total_scenarios": 10,
+  "goals_completed": 10,
+  "average_turns": 2.6,
+  "overall_scores": {
+    "GoalCompletion": {
+      "average": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "count": 10
+    },
+    "ToolUsage": {
+      "average": 0.83,
+      "min": 0.4,
+      "max": 1.0,
+      "count": 10
+    },
+    "TurnEfficiency": {
+      "average": 0.68,
+      "min": 0.0,
+      "max": 1.0,
+      "count": 10
+    },
+    "ConversationQuality": {
+      "average": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "count": 10
+    },
+    "PolicyAdherence": {
+      "average": 0.95,
+      "min": 0.5,
+      "max": 1.0,
+      "count": 10
+    }
+  },
+  "per_category": {
+    "inventory": {
+      "GoalCompletion": {
+        "average": 1.0,
+        "count": 1
+      },
+      "ToolUsage": {
+        "average": 1.0,
+        "count": 1
+      },
+      "TurnEfficiency": {
+        "average": 1.0,
+        "count": 1
+      },
+      "ConversationQuality": {
+        "average": 1.0,
+        "count": 1
+      },
+      "PolicyAdherence": {
+        "average": 1.0,
+        "count": 1
+      }
+    },
+    "order_change": {
+      "GoalCompletion": {
+        "average": 1.0,
+        "count": 1
+      },
+      "ToolUsage": {
+        "average": 0.5,
+        "count": 1
+      },
+      "TurnEfficiency": {
+        "average": 0.8,
+        "count": 1
+      },
+      "ConversationQuality": {
+        "average": 1.0,
+        "count": 1
+      },
+      "PolicyAdherence": {
+        "average": 1.0,
+        "count": 1
+      }
+    },
+    "order_status": {
+      "GoalCompletion": {
+        "average": 1.0,
+        "count": 3
+      },
+      "ToolUsage": {
+        "average": 0.7667,
+        "count": 3
+      },
+      "TurnEfficiency": {
+        "average": 0.6667,
+        "count": 3
+      },
+      "ConversationQuality": {
+        "average": 1.0,
+        "count": 3
+      },
+      "PolicyAdherence": {
+        "average": 1.0,
+        "count": 3
+      }
+    },
+    "out_of_scope": {
+      "GoalCompletion": {
+        "average": 1.0,
+        "count": 1
+      },
+      "ToolUsage": {
+        "average": 1.0,
+        "count": 1
+      },
+      "TurnEfficiency": {
+        "average": 0.6,
+        "count": 1
+      },
+      "ConversationQuality": {
+        "average": 1.0,
+        "count": 1
+      },
+      "PolicyAdherence": {
+        "average": 1.0,
+        "count": 1
+      }
+    },
+    "product_search": {
+      "GoalCompletion": {
+        "average": 1.0,
+        "count": 2
+      },
+      "ToolUsage": {
+        "average": 0.75,
+        "count": 2
+      },
+      "TurnEfficiency": {
+        "average": 0.5,
+        "count": 2
+      },
+      "ConversationQuality": {
+        "average": 1.0,
+        "count": 2
+      },
+      "PolicyAdherence": {
+        "average": 1.0,
+        "count": 2
+      }
+    },
+    "return": {
+      "GoalCompletion": {
+        "average": 1.0,
+        "count": 2
+      },
+      "ToolUsage": {
+        "average": 1.0,
+        "count": 2
+      },
+      "TurnEfficiency": {
+        "average": 0.7,
+        "count": 2
+      },
+      "ConversationQuality": {
+        "average": 1.0,
+        "count": 2
+      },
+      "PolicyAdherence": {
+        "average": 0.75,
+        "count": 2
+      }
+    }
+  },
+  "per_case": [
+    {
+      "name": "Polite customer checks order status",
+      "category": "order_status",
+      "persona": "polite",
+      "turns": 2,
+      "goal_completed": true,
+      "tools_used": [
+        "lookup_order"
+      ],
+      "latency_seconds": 11.67,
+      "scores": {
+        "GoalCompletion": 1.0,
+        "ToolUsage": 1.0,
+        "TurnEfficiency": 0.8,
+        "ConversationQuality": 1.0,
+        "PolicyAdherence": 1.0
+      }
+    },
+    {
+      "name": "Demanding customer wants order update",
+      "category": "order_status",
+      "persona": "demanding",
+      "turns": 5,
+      "goal_completed": true,
+      "tools_used": [
+        "lookup_order",
+        "process_return"
+      ],
+      "latency_seconds": 35.23,
+      "scores": {
+        "GoalCompletion": 1.0,
+        "ToolUsage": 0.9,
+        "TurnEfficiency": 0.2,
+        "ConversationQuality": 1.0,
+        "PolicyAdherence": 1.0
+      }
+    },
+    {
+      "name": "Customer wants to return a product",
+      "category": "return",
+      "persona": "neutral",
+      "turns": 3,
+      "goal_completed": true,
+      "tools_used": [
+        "lookup_order",
+        "process_return"
+      ],
+      "latency_seconds": 17.82,
+      "scores": {
+        "GoalCompletion": 1.0,
+        "ToolUsage": 1.0,
+        "TurnEfficiency": 0.6,
+        "ConversationQuality": 1.0,
+        "PolicyAdherence": 1.0
+      }
+    },
+    {
+      "name": "Confused customer needs product help",
+      "category": "product_search",
+      "persona": "confused",
+      "turns": 6,
+      "goal_completed": true,
+      "tools_used": [
+        "search_products"
+      ],
+      "latency_seconds": 68.56,
+      "scores": {
+        "GoalCompletion": 1.0,
+        "ToolUsage": 1.0,
+        "TurnEfficiency": 0.0,
+        "ConversationQuality": 1.0,
+        "PolicyAdherence": 1.0
+      }
+    },
+    {
+      "name": "Customer changes shipping address",
+      "category": "order_change",
+      "persona": "polite",
+      "turns": 2,
+      "goal_completed": true,
+      "tools_used": [
+        "update_shipping_address"
+      ],
+      "latency_seconds": 25.14,
+      "scores": {
+        "GoalCompletion": 1.0,
+        "ToolUsage": 0.5,
+        "TurnEfficiency": 0.8,
+        "ConversationQuality": 1.0,
+        "PolicyAdherence": 1.0
+      }
+    },
+    {
+      "name": "Customer checks product availability",
+      "category": "inventory",
+      "persona": "demanding",
+      "turns": 1,
+      "goal_completed": true,
+      "tools_used": [
+        "check_inventory"
+      ],
+      "latency_seconds": 9.96,
+      "scores": {
+        "GoalCompletion": 1.0,
+        "ToolUsage": 1.0,
+        "TurnEfficiency": 1.0,
+        "ConversationQuality": 1.0,
+        "PolicyAdherence": 1.0
+      }
+    },
+    {
+      "name": "Customer tries to return an old order",
+      "category": "return",
+      "persona": "demanding",
+      "turns": 2,
+      "goal_completed": true,
+      "tools_used": [
+        "lookup_order",
+        "process_return"
+      ],
+      "latency_seconds": 27.92,
+      "scores": {
+        "GoalCompletion": 1.0,
+        "ToolUsage": 1.0,
+        "TurnEfficiency": 0.8,
+        "ConversationQuality": 1.0,
+        "PolicyAdherence": 0.5
+      }
+    },
+    {
+      "name": "Customer asks about something out of scope",
+      "category": "out_of_scope",
+      "persona": "confused",
+      "turns": 3,
+      "goal_completed": true,
+      "tools_used": [],
+      "latency_seconds": 29.99,
+      "scores": {
+        "GoalCompletion": 1.0,
+        "ToolUsage": 1.0,
+        "TurnEfficiency": 0.6,
+        "ConversationQuality": 1.0,
+        "PolicyAdherence": 1.0
+      }
+    },
+    {
+      "name": "Multi-step: search then check inventory then ask about shipping",
+      "category": "product_search",
+      "persona": "neutral",
+      "turns": 1,
+      "goal_completed": true,
+      "tools_used": [
+        "search_products"
+      ],
+      "latency_seconds": 11.54,
+      "scores": {
+        "GoalCompletion": 1.0,
+        "ToolUsage": 0.5,
+        "TurnEfficiency": 1.0,
+        "ConversationQuality": 1.0,
+        "PolicyAdherence": 1.0
+      }
+    },
+    {
+      "name": "Demanding customer with multiple requests",
+      "category": "order_status",
+      "persona": "demanding",
+      "turns": 1,
+      "goal_completed": true,
+      "tools_used": [
+        "lookup_order",
+        "check_inventory"
+      ],
+      "latency_seconds": 11.01,
+      "scores": {
+        "GoalCompletion": 1.0,
+        "ToolUsage": 0.4,
+        "TurnEfficiency": 1.0,
+        "ConversationQuality": 1.0,
+        "PolicyAdherence": 1.0
+      }
+    }
+  ]
+}

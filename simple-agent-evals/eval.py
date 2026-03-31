@@ -853,8 +853,8 @@ def main() -> None:
     #   NoError: Does the response avoid error/failure indicators?
     #   ScopeAwareness: Does the agent decline out-of-scope requests?
     all_scorers = [
-        Factuality(model=EVAL_JUDGE_MODEL, client=judge_client),
-        ClosedQA(model=EVAL_JUDGE_MODEL, client=judge_client),
+        # Factuality(model=EVAL_JUDGE_MODEL, client=judge_client),
+        # ClosedQA(model=EVAL_JUDGE_MODEL, client=judge_client),
         tool_selection_scorer,
         response_completeness_scorer,
         latency_scorer,

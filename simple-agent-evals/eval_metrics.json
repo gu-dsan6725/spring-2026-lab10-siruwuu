@@ -1,0 +1,437 @@
+{
+    "total_cases": 25,
+    "errors": 0,
+    "overall_scores": {
+        "Latency": {
+            "average": 1.0,
+            "min": 1.0,
+            "max": 1.0,
+            "count": 25
+        },
+        "NoError": {
+            "average": 1.0,
+            "min": 1,
+            "max": 1,
+            "count": 25
+        },
+        "ResponseCompleteness": {
+            "average": 0.9762,
+            "min": 0.5,
+            "max": 1.0,
+            "count": 21
+        },
+        "ScopeAwareness": {
+            "average": 0.96,
+            "min": 0,
+            "max": 1,
+            "count": 25
+        },
+        "ToolSelection": {
+            "average": 1.0,
+            "min": 1.0,
+            "max": 1.0,
+            "count": 20
+        }
+    },
+    "per_category": {
+        "directions": {
+            "Latency": {
+                "average": 1.0,
+                "count": 5
+            },
+            "NoError": {
+                "average": 1.0,
+                "count": 5
+            },
+            "ResponseCompleteness": {
+                "average": 1.0,
+                "count": 5
+            },
+            "ScopeAwareness": {
+                "average": 1.0,
+                "count": 5
+            },
+            "ToolSelection": {
+                "average": 1.0,
+                "count": 5
+            }
+        },
+        "multi_tool": {
+            "Latency": {
+                "average": 1.0,
+                "count": 6
+            },
+            "NoError": {
+                "average": 1.0,
+                "count": 6
+            },
+            "ResponseCompleteness": {
+                "average": 0.9167,
+                "count": 6
+            },
+            "ScopeAwareness": {
+                "average": 1.0,
+                "count": 6
+            },
+            "ToolSelection": {
+                "average": 1.0,
+                "count": 6
+            }
+        },
+        "out_of_scope": {
+            "Latency": {
+                "average": 1.0,
+                "count": 4
+            },
+            "NoError": {
+                "average": 1.0,
+                "count": 4
+            },
+            "ScopeAwareness": {
+                "average": 0.75,
+                "count": 4
+            },
+            "ToolSelection": {
+                "average": 1.0,
+                "count": 1
+            }
+        },
+        "search": {
+            "Latency": {
+                "average": 1.0,
+                "count": 5
+            },
+            "NoError": {
+                "average": 1.0,
+                "count": 5
+            },
+            "ResponseCompleteness": {
+                "average": 1.0,
+                "count": 5
+            },
+            "ScopeAwareness": {
+                "average": 1.0,
+                "count": 5
+            },
+            "ToolSelection": {
+                "average": 1.0,
+                "count": 3
+            }
+        },
+        "weather": {
+            "Latency": {
+                "average": 1.0,
+                "count": 5
+            },
+            "NoError": {
+                "average": 1.0,
+                "count": 5
+            },
+            "ResponseCompleteness": {
+                "average": 1.0,
+                "count": 5
+            },
+            "ScopeAwareness": {
+                "average": 1.0,
+                "count": 5
+            },
+            "ToolSelection": {
+                "average": 1.0,
+                "count": 5
+            }
+        }
+    },
+    "per_case": [
+        {
+            "input": "How long does it take to drive from Arlington VA to Georgetown University?",
+            "category": "directions",
+            "scores": {
+                "ToolSelection": 1.0,
+                "ResponseCompleteness": 1.0,
+                "Latency": 1.0,
+                "NoError": 1,
+                "ScopeAwareness": 1
+            },
+            "error": null
+        },
+        {
+            "input": "What is the current weather in Washington DC?",
+            "category": "weather",
+            "scores": {
+                "ToolSelection": 1.0,
+                "ResponseCompleteness": 1.0,
+                "Latency": 1.0,
+                "NoError": 1,
+                "ScopeAwareness": 1
+            },
+            "error": null
+        },
+        {
+            "input": "What are the top tourist attractions in Paris?",
+            "category": "search",
+            "scores": {
+                "ToolSelection": 1.0,
+                "ResponseCompleteness": 1.0,
+                "Latency": 1.0,
+                "NoError": 1,
+                "ScopeAwareness": 1
+            },
+            "error": null
+        },
+        {
+            "input": "I am planning a trip from New York City to Boston. How far is it and what is the weather like in Boston right now?",
+            "category": "multi_tool",
+            "scores": {
+                "ToolSelection": 1.0,
+                "ResponseCompleteness": 1.0,
+                "Latency": 1.0,
+                "NoError": 1,
+                "ScopeAwareness": 1
+            },
+            "error": null
+        },
+        {
+            "input": "What is the weather in Tokyo right now?",
+            "category": "weather",
+            "scores": {
+                "ToolSelection": 1.0,
+                "ResponseCompleteness": 1.0,
+                "Latency": 1.0,
+                "NoError": 1,
+                "ScopeAwareness": 1
+            },
+            "error": null
+        },
+        {
+            "input": "How do I get from the White House to the Lincoln Memorial?",
+            "category": "directions",
+            "scores": {
+                "ToolSelection": 1.0,
+                "ResponseCompleteness": 1.0,
+                "Latency": 1.0,
+                "NoError": 1,
+                "ScopeAwareness": 1
+            },
+            "error": null
+        },
+        {
+            "input": "What is the distance from Los Angeles to San Francisco and what are some good stops along the way?",
+            "category": "multi_tool",
+            "scores": {
+                "ToolSelection": 1.0,
+                "ResponseCompleteness": 1.0,
+                "Latency": 1.0,
+                "NoError": 1,
+                "ScopeAwareness": 1
+            },
+            "error": null
+        },
+        {
+            "input": "What is the capital of Australia?",
+            "category": "search",
+            "scores": {
+                "ResponseCompleteness": 1.0,
+                "Latency": 1.0,
+                "NoError": 1,
+                "ScopeAwareness": 1
+            },
+            "error": null
+        },
+        {
+            "input": "Should I bring an umbrella if I am visiting Seattle today?",
+            "category": "weather",
+            "scores": {
+                "ToolSelection": 1.0,
+                "ResponseCompleteness": 1.0,
+                "Latency": 1.0,
+                "NoError": 1,
+                "ScopeAwareness": 1
+            },
+            "error": null
+        },
+        {
+            "input": "I need to drive from Chicago to Milwaukee. How long will it take and what is the weather in Milwaukee?",
+            "category": "multi_tool",
+            "scores": {
+                "ToolSelection": 1.0,
+                "ResponseCompleteness": 1.0,
+                "Latency": 1.0,
+                "NoError": 1,
+                "ScopeAwareness": 1
+            },
+            "error": null
+        },
+        {
+            "input": "What are the latest developments in quantum computing?",
+            "category": "search",
+            "scores": {
+                "ToolSelection": 1.0,
+                "ResponseCompleteness": 1.0,
+                "Latency": 1.0,
+                "NoError": 1,
+                "ScopeAwareness": 1
+            },
+            "error": null
+        },
+        {
+            "input": "How far is it from the Pentagon to Dulles Airport?",
+            "category": "directions",
+            "scores": {
+                "ToolSelection": 1.0,
+                "ResponseCompleteness": 1.0,
+                "Latency": 1.0,
+                "NoError": 1,
+                "ScopeAwareness": 1
+            },
+            "error": null
+        },
+        {
+            "input": "I want to plan a weekend in Miami. What is the weather like and what are the best things to do there?",
+            "category": "multi_tool",
+            "scores": {
+                "ToolSelection": 1.0,
+                "ResponseCompleteness": 0.5,
+                "Latency": 1.0,
+                "NoError": 1,
+                "ScopeAwareness": 1
+            },
+            "error": null
+        },
+        {
+            "input": "What is the weather in London and how does it compare to the weather in Paris right now?",
+            "category": "weather",
+            "scores": {
+                "ToolSelection": 1.0,
+                "ResponseCompleteness": 1.0,
+                "Latency": 1.0,
+                "NoError": 1,
+                "ScopeAwareness": 1
+            },
+            "error": null
+        },
+        {
+            "input": "How long would it take to drive from Denver to Yellowstone National Park?",
+            "category": "directions",
+            "scores": {
+                "ToolSelection": 1.0,
+                "ResponseCompleteness": 1.0,
+                "Latency": 1.0,
+                "NoError": 1,
+                "ScopeAwareness": 1
+            },
+            "error": null
+        },
+        {
+            "input": "What is Amazon Bedrock and what services does it offer?",
+            "category": "search",
+            "scores": {
+                "ToolSelection": 1.0,
+                "ResponseCompleteness": 1.0,
+                "Latency": 1.0,
+                "NoError": 1,
+                "ScopeAwareness": 1
+            },
+            "error": null
+        },
+        {
+            "input": "I am driving from Georgetown University to Baltimore Inner Harbor. How far is it, what is the weather in Baltimore, and ",
+            "category": "multi_tool",
+            "scores": {
+                "ToolSelection": 1.0,
+                "ResponseCompleteness": 1.0,
+                "Latency": 1.0,
+                "NoError": 1,
+                "ScopeAwareness": 1
+            },
+            "error": null
+        },
+        {
+            "input": "What is the current temperature in Anchorage Alaska?",
+            "category": "weather",
+            "scores": {
+                "ToolSelection": 1.0,
+                "ResponseCompleteness": 1.0,
+                "Latency": 1.0,
+                "NoError": 1,
+                "ScopeAwareness": 1
+            },
+            "error": null
+        },
+        {
+            "input": "How do I get from Times Square to JFK Airport?",
+            "category": "directions",
+            "scores": {
+                "ToolSelection": 1.0,
+                "ResponseCompleteness": 1.0,
+                "Latency": 1.0,
+                "NoError": 1,
+                "ScopeAwareness": 1
+            },
+            "error": null
+        },
+        {
+            "input": "What are the best practices for prompt engineering with large language models?",
+            "category": "search",
+            "scores": {
+                "ResponseCompleteness": 1.0,
+                "Latency": 1.0,
+                "NoError": 1,
+                "ScopeAwareness": 1
+            },
+            "error": null
+        },
+        {
+            "input": "I am road tripping from Austin TX to Nashville TN. How far is the drive, what is the weather like in Nashville right now",
+            "category": "multi_tool",
+            "scores": {
+                "ToolSelection": 1.0,
+                "ResponseCompleteness": 1.0,
+                "Latency": 1.0,
+                "NoError": 1,
+                "ScopeAwareness": 1
+            },
+            "error": null
+        },
+        {
+            "input": "Book me a flight from Washington DC to London for next Friday.",
+            "category": "out_of_scope",
+            "scores": {
+                "Latency": 1.0,
+                "NoError": 1,
+                "ScopeAwareness": 1
+            },
+            "error": null
+        },
+        {
+            "input": "Send an email to my boss telling him I will be late to the meeting tomorrow.",
+            "category": "out_of_scope",
+            "scores": {
+                "Latency": 1.0,
+                "NoError": 1,
+                "ScopeAwareness": 1
+            },
+            "error": null
+        },
+        {
+            "input": "What was the closing price of Apple stock yesterday?",
+            "category": "out_of_scope",
+            "scores": {
+                "ToolSelection": 1.0,
+                "Latency": 1.0,
+                "NoError": 1,
+                "ScopeAwareness": 0
+            },
+            "error": null
+        },
+        {
+            "input": "Order me a pepperoni pizza from Dominos to 1600 Pennsylvania Avenue.",
+            "category": "out_of_scope",
+            "scores": {
+                "Latency": 1.0,
+                "NoError": 1,
+                "ScopeAwareness": 1
+            },
+            "error": null
+        }
+    ]
+}
